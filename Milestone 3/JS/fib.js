@@ -1,8 +1,9 @@
 
 let fibArray = [];
 function getFib() {
-    
     let fibNumber = document.getElementById("number").value;
+    
+    
     fibArray[0] = 0;
     fibArray[1] = 1;
     
@@ -11,7 +12,9 @@ function getFib() {
             
         }
         
-        document.getElementById('fibonacciNumber').innerHTML = fibArray[fibNumber];
+       document.getElementById('fibonacciNumber').innerText = fibArray[fibNumber];
+    
+        
     }
-
-document.getElementById('button').addEventListener("click", getFib);
+    
+    document.getElementById('button').addEventListener('click', getFib);

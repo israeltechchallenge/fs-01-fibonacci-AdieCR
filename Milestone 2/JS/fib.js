@@ -12,3 +12,5 @@ function getFib(number) {
     }
     let result = getFib(fibNumber);
     document.getElementById('fibonacciNumber').innerHTML = 'The Fibonacci of ' + fibNumber+ ' is ' +result+'.';
+
+    

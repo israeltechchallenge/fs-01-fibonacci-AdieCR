@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci-Milestone 6</title>
+    <link href="./CSS/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous">
+    <link href="./CSS/style.css" rel="stylesheet"></link>
+  </head>
+  <body class="d-flex flex-column">
+    <h1 class="display-1 m-5">Fibonacci Calculator</h1>
+    <div class="d-flex flex-row m-5 align-items-center mb-0">
+      <div class="fs-4 p-1">The Fibonacci of</div>
+      <div class="p-1">
+        <input type="number" id="number" size="1" class="form-control" placeholder="#" onkeypress="return event.charCode >=48 && event.charCode <=57"/>
+                
+      </div>
+      <div class="p-1">
+        <button id="button" class="btn btn-primary">is</button>
+      </div>
+      <u><strong><div class="fs-4 p-1" id="fibonacciNumber"></strong></u></div>
+      
+    </div>
+    <div class="d-flex felx-row mt-0">
+      <div style="width: 16%;"></div>
+      <div class="d-flex ml-5  my-0"style="height: 50px; ">
+      <span id="alert" class="d-none pb-1 pt-1 d-inline-block alert alert-danger" role="alert">
+      Can't be larger than 50
+      </span>
+    </div>
+    </div>
+    <div class="d-flex flex-row align-items-center mt-3 mb-5">
+        <h2 class="display-3 ms-5 ">Results</h2>
+        <div id="spinner" class="ms-3 spinner-border d-none" role="status">
+          <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <div class="mt-3 ms-5">
+        <span  id="listRes" class="fs-5 border-bottom pb-3 border-secondary"></span>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/fib.js"></script>
+  </body>
+</html>
